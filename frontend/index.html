@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Docker Compose Project</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Docker Compose Full Stack Project</h1>
+
+        <p class="subtitle">
+            Nginx • Flask • MySQL • Redis • Docker Compose
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>Frontend</h2>
+                <p>Nginx Container Running</p>
+            </div>
+
+            <div class="card">
+                <h2>Backend API</h2>
+                <p id="backend-status">Checking...</p>
+            </div>
+
+            <div class="card">
+                <h2>Database</h2>
+                <p id="db-status">Checking...</p>
+            </div>
+
+            <div class="card">
+                <h2>Redis Cache</h2>
+                <p id="redis-status">Checking...</p>
+            </div>
+
+        </div>
+
+        <button onclick="checkServices()">
+            Refresh Services
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
