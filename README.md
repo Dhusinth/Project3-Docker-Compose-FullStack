@@ -2,13 +2,25 @@
 
 A multi-container full stack application built using Docker Compose with Nginx, Flask, MySQL, and Redis.
 
-This project demonstrates container orchestration, Docker networking, reverse proxy configuration, backend API communication, database integration, and Redis caching using Docker Compose.
+This project demonstrates multi-container orchestration, Docker networking, reverse proxy configuration, backend API communication, database integration, and Redis caching using Docker Compose.
 
 ---
 
 # 📌 Project Architecture
 
 Frontend (Nginx) → Backend API (Flask) → MySQL + Redis
+
+---
+
+# 🚀 Technologies Demonstrated
+
+- Containerization
+- Multi-container Architecture
+- Docker Networking
+- Reverse Proxy
+- Service Discovery
+- Persistent Storage
+- Backend API Integration
 
 ---
 
@@ -54,6 +66,11 @@ Project3-Docker-Compose-FullStack/
 │   ├── app.py
 │   ├── requirements.txt
 │   └── Dockerfile
+│
+├── screenshots/
+│   ├── app-ui.png
+│   ├── docker-compose.png
+│   └── docker-desktop.png
 │
 ├── docker-compose.yml
 ├── README.md
@@ -114,7 +131,7 @@ MYSQL_HOST: mysql
 REDIS_HOST: redis
 ```
 
-The backend container can communicate with MySQL and Redis using service names instead of IP addresses.
+The backend container communicates with MySQL and Redis using service names instead of IP addresses.
 
 ---
 
@@ -152,7 +169,7 @@ This prevents database data loss even if containers are recreated.
 ## Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Project3-Docker-Compose-FullStack.git
+git clone https://github.com/Dhusinth/Project3-Docker-Compose-FullStack.git
 ```
 
 ---
@@ -187,27 +204,19 @@ http://localhost
 
 ## Application UI
 
-Add screenshot here:
-
-```markdown
 ![Application UI](screenshots/app-ui.png)
-```
 
 ---
 
 ## Docker Compose Running Containers
 
-```markdown
 ![Docker Compose](screenshots/docker-compose.png)
-```
 
 ---
 
 ## Docker Desktop Containers
 
-```markdown
 ![Docker Desktop](screenshots/docker-desktop.png)
-```
 
 ---
 
